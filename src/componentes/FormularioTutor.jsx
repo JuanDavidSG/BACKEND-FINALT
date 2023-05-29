@@ -10,7 +10,6 @@ export const FormularioTutor= ({ agregar }) => {
     const [asignatura, setAsignatura] = useState("");
     const [habilidades, setHabilidades] = useState("");
     const [imagen, setImagen] = useState(null);
-
     
 
     const guardarTutor = (event) => {
