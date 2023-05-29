@@ -102,7 +102,7 @@ export function Calendario({tutor, asignatura, setEventos, eventos, tutorId}) {
             slotDuration={'01:00:00'}
             scrollTime={'06:00:00'}
             expandRows={true}
-            headerToolbar={ {
+            headerToolbar={  {
                 left: 'prev,next',
                 center: 'title',
                 right: 'timeGridWeek,timeGridDay'
