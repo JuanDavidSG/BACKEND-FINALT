@@ -24,7 +24,7 @@ export const SigaTutoriasApp = () => {
     } else {
       postTutores(tutor);
     }
-  };  
+  };
 
   const filtrarTutores = (tutores, busqueda) => {
     if (busqueda === "") {
@@ -46,8 +46,8 @@ export const SigaTutoriasApp = () => {
 
   useEffect(() => {
     cargueTutores();
-  }, []); 
-  
+  }, []);
+
 
   const cargueTutorias = async () => {
     const datos = await getTutorias();
@@ -57,8 +57,8 @@ export const SigaTutoriasApp = () => {
   useEffect(() => {
     cargueTutorias();
   }, []);
-  
-  
+
+
 
   return (
     <>
@@ -92,7 +92,7 @@ export const SigaTutoriasApp = () => {
             </button>
           </li>
         </ul>
-        {}
+        { }
         <div className="tab-content">
           <div className={`tab-pane ${activeTab === "tabla" ? "active" : ""}`} id="tabla">
             <TablaTutores
@@ -105,7 +105,7 @@ export const SigaTutoriasApp = () => {
             className={`tab-pane ${activeTab === "agendarTutorias" ? "active" : ""}`}
             id="agendarTutorias"
           >
-            <Tutorias  tutores={tutores}/>
+            <Tutorias tutores={tutores} />
           </div>
 
           <div className={`tab-pane ${activeTab === "formulario" ? "active" : ""}`} id="formulario">
@@ -125,11 +125,10 @@ export const SigaTutoriasApp = () => {
       </h6>
 
 
-      
+
     </>
   );
-  
+
 };
 
 
-    

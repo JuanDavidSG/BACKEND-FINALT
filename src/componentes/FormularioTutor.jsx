@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-export const FormularioTutor= ({ agregar }) => {
+export const FormularioTutor = ({ agregar }) => {
     const [id, setId] = useState("");
     const [nombre, setNombre] = useState("");
     const [semestre, setSemestre] = useState("");
@@ -10,11 +10,11 @@ export const FormularioTutor= ({ agregar }) => {
     const [asignatura, setAsignatura] = useState("");
     const [habilidades, setHabilidades] = useState("");
     const [imagen, setImagen] = useState(null);
-    
+
 
     const guardarTutor = (event) => {
 
-        let tutor= {
+        let tutor = {
             id: id,
             nombre: nombre,
             semestre: semestre,
@@ -39,17 +39,17 @@ export const FormularioTutor= ({ agregar }) => {
     }
 
     const handleImagenSeleccionada = (event) => {
-        const archivo = event.target.files[0]; 
-        
+        const archivo = event.target.files[0];
+
         if (archivo) {
-              const reader = new FileReader();
-        
-              reader.onload = (e) => {
-                setImagen(e.target.result); 
-              };
-        
-              reader.readAsDataURL(archivo);
-            }
+            const reader = new FileReader();
+
+            reader.onload = (e) => {
+                setImagen(e.target.result);
+            };
+
+            reader.readAsDataURL(archivo);
+        }
     };
 
 
@@ -143,7 +143,7 @@ export const FormularioTutor= ({ agregar }) => {
                     Registrarme como tutor
                 </button>
             </form>
-            
+
         </>
     )
 }
