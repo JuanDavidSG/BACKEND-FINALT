@@ -36,7 +36,7 @@ export const SigaTutoriasApp = () => {
       return tutoresFiltrados;
     }
   };
-
+  
   const listaTutoresFiltrados = filtrarTutores(tutores, busqueda);
 
   const cargueTutores = async () => {
