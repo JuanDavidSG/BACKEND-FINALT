@@ -24,8 +24,7 @@ export const SigaTutoriasApp = () => {
     } else {
       postTutores(tutor);
     }
-  };
-  
+  };  
 
   const filtrarTutores = (tutores, busqueda) => {
     if (busqueda === "") {
