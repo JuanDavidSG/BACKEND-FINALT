@@ -5,7 +5,6 @@ import { getTutores } from "./peticiones/getTutores";
 import { postTutores } from "./peticiones/postTutores";
 import { Tutorias } from "./componentes/Tutorias";
 import { getTutorias } from "./peticiones/getTutorias";
-import { postAgendarTutorias } from "./peticiones/postAgendarTutorias";
 
 export const SigaTutoriasApp = () => {
   const [tutores, setTutores] = useState([]);
