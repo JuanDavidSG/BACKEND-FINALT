@@ -10,10 +10,8 @@ import { postAgendarTutorias } from "./peticiones/postAgendarTutorias";
 export const SigaTutoriasApp = () => {
   const [tutores, setTutores] = useState([]);
   const [tutorias, setTutorias] = useState("");
-  const [tutoriaSeleccionada, setTutoriaSeleccionada] = useState(null);
   const [busqueda, setBusqueda] = useState("");
   const [activeTab, setActiveTab] = useState("tabla");
-  const [tutorSeleccionado, setTutorSeleccionado] = useState(null);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -50,11 +48,8 @@ export const SigaTutoriasApp = () => {
 
   useEffect(() => {
     cargueTutores();
-  }, []);  
-
-  const agregarTutoria = (tutoria) => {
-      postAgendarTutorias(tutores.id, tutoria);
-  };
+  }, []); 
+  
 
   const cargueTutorias = async () => {
     const datos = await getTutorias();
@@ -99,7 +94,7 @@ export const SigaTutoriasApp = () => {
             </button>
           </li>
         </ul>
-        {/* Contenido de las pestañas */}
+        {}
         <div className="tab-content">
           <div className={`tab-pane ${activeTab === "tabla" ? "active" : ""}`} id="tabla">
             <TablaTutores
