@@ -62,7 +62,7 @@ export const Tutorias = ({ tutores }) => {
                 alignItems: "center",
               }}
             >
-              {/* Seleccionar tutor para agendar tutoría */}
+              {}
               <h4 className="mt-5 text-success">1. Selecciona el tutor para agendar la tutoría</h4>
               <div className="form-group text-center">
                 <label htmlFor="tutor" className="mb-1">Nombre del tutor</label>
@@ -82,7 +82,7 @@ export const Tutorias = ({ tutores }) => {
                 </select>
               </div>
               
-                {/* Seleccionar una asignatura */}
+                {}
               <h4 className="mt-5 text-success">2. Asignatura a dictar</h4>
               <div className="form-group text-center">
                 <label htmlFor="asignatura" className="mb-1">Asignatura</label>
@@ -98,7 +98,7 @@ export const Tutorias = ({ tutores }) => {
                 </select>
               </div>
               
-              {/* Seleccionar fecha y hora */}
+              {}
               <h4 className="mt-5 text-success">3. Selecciona la fecha y hora de la tutoría</h4>
               <i>Seleccionar una casilla para ingresar la hora y la cantidad de horas que durará la tutoría</i>
               <br />
