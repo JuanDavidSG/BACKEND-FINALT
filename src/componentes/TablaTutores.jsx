@@ -15,8 +15,6 @@ export const TablaTutores = ({ listaTutores, handleTabChange }) => {
         handleTabChange("agendarTutorias");
     };
 
-
-
     return (
         <>
             <br />
