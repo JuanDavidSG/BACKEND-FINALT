@@ -37,7 +37,7 @@ export const Tutorias = ({ tutores }) => {
       const tutorSeleccionado = event.target.value;
       setTutorSeleccionado(tutorSeleccionado);
       const tutorEncontrado = tutores.find(
-        (tutor) => tutor.nombre === tutorSeleccionado
+        (tutor) =>  tutor.nombre === tutorSeleccionado
       );
       if (tutorEncontrado) {
         setTutorId(tutorEncontrado.id);
